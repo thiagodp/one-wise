@@ -31,10 +31,10 @@ console.log(
 will print
 ```json
 [
-   { "foo": "x", "bar": "a", "baz": "f" ],
-   { "foo": "y", "bar": "b", "baz": "g" ],
-   { "foo": "x", "bar": "c", "baz": "f" ],
-   { "foo": "y", "bar": "d", "baz": "g" ]
+   { "foo": "x", "bar": "a", "baz": "f" },
+   { "foo": "y", "bar": "b", "baz": "g" },
+   { "foo": "x", "bar": "c", "baz": "f" },
+   { "foo": "y", "bar": "d", "baz": "g" }
 ]
 ```
 **Note**: the values of `foo` and `bar` in the last two lines are picked *randomly*.
