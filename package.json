@@ -19,6 +19,11 @@
 		"n-way",
 		"test-data"
 	],
+	"scripts": {
+		"test": "ava"
+	},
 	"dependencies": {},
-	"devDependencies": {}
+	"devDependencies": {
+		"ava": "^0.25.0"
+	}
 }

@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Performs a 1-wise (aka 1-way) interaction with the items of the given parameters.
  *
@@ -35,6 +37,4 @@ function randomBefore( n, randomFn ) {
     return Math.floor( randomFn() * n );
 }
 
-module.exports = {
-    oneWise: oneWise
-};
+module.exports = oneWise;

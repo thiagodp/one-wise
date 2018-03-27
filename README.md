@@ -18,7 +18,7 @@ npm install one-wise --save
 
 
 ```javascript
-import { oneWise } from 'one-wise';
+const oneWise = require( 'one-wise' );
 
 console.log(
     oneWise( {
