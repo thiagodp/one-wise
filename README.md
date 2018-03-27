@@ -20,15 +20,13 @@ npm install one-wise --save
 ```javascript
 const oneWise = require( 'one-wise' );
 
-console.log(
-    oneWise( {
-        "foo": [ "x", "y" ],
-        "bar": [ "a", "b", "c", "d" ],
-        "baz": [ "f", "g" ]
-    } )
-);
+oneWise( {
+    "foo": [ "x", "y" ],
+    "bar": [ "a", "b", "c", "d" ],
+    "baz": [ "f", "g" ]
+} )
 ```
-will print
+will return
 ```json
 [
    { "foo": "x", "bar": "a", "baz": "f" },
