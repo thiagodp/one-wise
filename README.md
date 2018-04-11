@@ -42,6 +42,13 @@ It uses JavaScript's `Math.random()`, but a *predictive* pseudo-random generator
 oneWise( { ... }, myPseudoRandomNumberGenerator );
 ```
 
+## API
+
+### oneWise( obj [, prngFunc ] )
+
+- `obj` {object} - The given object.
+- `prngFunc` {function} - Pseudo-random number generator function used to pick array elements to repeat. Defaults to `Math.random`.
+
 ## See also
 
 - [shuffle-obj-arrays](https://github.com/thiagodp/shuffle-obj-arrays) - Shuffles the arrays of the given object. A custom PRNG can be used.
