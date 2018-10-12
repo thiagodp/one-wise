@@ -2,6 +2,8 @@
 
 One-wise combinatorial testing generator
 
+[![Build Status](https://travis-ci.org/thiagodp/one-wise.svg?branch=master)](https://travis-ci.org/thiagodp/one-wise)
+
 > A **1-wise** (*a.k.a.* **1-way**) testing generator guarantees that at least one value of each group appears in the generated tests. The produced array has exactly the length of the largest input array.
 
 ## About
