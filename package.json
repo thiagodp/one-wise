@@ -1,6 +1,6 @@
 {
 	"name": "one-wise",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "One-wise combinatorial testing generator",
 	"license": "MIT",
 	"repository": "https://github.com/thiagodp/one-wise.git",
