@@ -1,5 +1,5 @@
-import test from 'ava';
-import oneWise from '.';
+const test = require( 'ava' );
+const oneWise = require( '.' );
 
 test( 'an object without properties returns an empty object array', t => {
     const r = oneWise( {} );

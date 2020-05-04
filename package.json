@@ -20,10 +20,11 @@
 		"test-data"
 	],
 	"scripts": {
-		"test": "ava"
+		"test": "ava",
+		"preversion": "ava"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"ava": "^3.0.0"
+		"ava": "^3.8.1"
 	}
 }

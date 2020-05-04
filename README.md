@@ -18,7 +18,6 @@ npm install one-wise --save
 
 ## Example
 
-
 ```javascript
 const oneWise = require( 'one-wise' );
 
