@@ -40,33 +40,43 @@ will return
 
 It uses JavaScript's `Math.random()`, but a *predictive* pseudo-random generator function (*e.g.,* [seedrandom](https://github.com/davidbau/seedrandom)) can be passed as a second argument. Such function must work like `Math.random()` and return a number >= 0 and < 1.
 ```javascript
-oneWise( { ... }, myPseudoRandomNumberGenerator );
+oneWise( /* your object */, myPseudoRandomNumberGenerator );
 ```
 
-## Declaring
+## Declaration
 
 ### Browser
 
-**Option 1**: Use unpkg:
 ```html
 <script crossorigin src="https://unpkg.com/one-wise" ></script>
+<script>
+console.log(
+	oneWise( {
+		"foo": [ "x", "y" ],
+		"bar": [ 1, 2, 3 ]
+	} )
+);
+</script>
 ```
 
-**Option 2**: install the library then use it. Example:
+**Option 2**: Using unpkg and ESM:
 ```html
-<script src="node_modules/one-wise/index.js" ></script>
+<script crossorigin src="https://unpkg.com/one-wise/index.esm.js" ></script>
+<script>
+import oneWise from 'one-wise';
+</script>
 ```
 
 ### CommonJS (NodeJS)
 
-```
+```javascript
 const oneWise = require('one-wise');
 ```
 
 ### ESM/TypeScript
 
-```
-import * as oneWise from 'one-wise';
+```javascript
+import oneWise from 'one-wise';
 ```
 
 ## API

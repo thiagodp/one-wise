@@ -10,11 +10,12 @@
 	"files": [
 		"index.*"
 	],
-	"source": "index.js",
+	"source": "src/index.ts",
 	"main": "index.js",
 	"browser": "index.umd.js",
 	"unpkg": "index.umd.js",
 	"module": "index.esm.js",
+	"types": "index.d.ts",
 	"keywords": [
 		"one-wise",
 		"pairwise",
@@ -25,10 +26,10 @@
 		"test-data"
 	],
 	"scripts": {
-		"build": "microbundle",
+		"build": "microbundle --name oneWise",
 		"test": "ava",
 		"cov": "nyc ava",
-		"all": "npm run test && npm run build",
+		"all": "npm run build && npm run test",
 		"preversion": "npm run all",
 		"postversion": "git push && git push --tags"
 	},
