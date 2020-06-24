@@ -1,1 +1,7 @@
 node_modules
+.nyc_output
+coverage
+*.map
+index.esm.*
+index.modern.*
+index.umd.*

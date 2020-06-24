@@ -2,7 +2,9 @@
 
 One-wise combinatorial testing generator
 
-[![Build Status](https://travis-ci.org/thiagodp/one-wise.svg?branch=master)](https://travis-ci.org/thiagodp/one-wise) [![Greenkeeper badge](https://badges.greenkeeper.io/thiagodp/one-wise.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/one-wise.svg)](https://badge.fury.io/js/one-wise)
+[![Build Status](https://travis-ci.org/thiagodp/one-wise.svg?branch=master)](https://travis-ci.org/thiagodp/one-wise)
+[![Coverage Status](https://coveralls.io/repos/github/thiagodp/one-wise/badge.svg?branch=master)](https://coveralls.io/github/thiagodp/one-wise?branch=master)
 
 > A **1-wise** (*a.k.a.* **1-way**) testing generator guarantees that at least one value of each group appears in the generated tests. The produced array has exactly the length of the largest input array.
 
@@ -13,14 +15,12 @@ This is a fast and simple implementation of a [1-wise testing](https://en.wikipe
 ## Install
 
 ```bash
-npm install one-wise --save
+npm install one-wise
 ```
 
 ## Example
 
 ```javascript
-const oneWise = require( 'one-wise' );
-
 oneWise( {
     "foo": [ "x", "y" ],
     "bar": [ "a", "b", "c", "d" ],
@@ -41,6 +41,32 @@ will return
 It uses JavaScript's `Math.random()`, but a *predictive* pseudo-random generator function (*e.g.,* [seedrandom](https://github.com/davidbau/seedrandom)) can be passed as a second argument. Such function must work like `Math.random()` and return a number >= 0 and < 1.
 ```javascript
 oneWise( { ... }, myPseudoRandomNumberGenerator );
+```
+
+## Declaring
+
+### Browser
+
+**Option 1**: Use unpkg:
+```html
+<script crossorigin src="https://unpkg.com/one-wise" ></script>
+```
+
+**Option 2**: install the library then use it. Example:
+```html
+<script src="node_modules/one-wise/index.js" ></script>
+```
+
+### CommonJS (NodeJS)
+
+```
+const oneWise = require('one-wise');
+```
+
+### ESM/TypeScript
+
+```
+import * as oneWise from 'one-wise';
 ```
 
 ## API

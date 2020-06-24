@@ -8,8 +8,13 @@
 		"name": "Thiago Delgado Pinto"
 	},
 	"files": [
-		"index.js"
+		"index.*"
 	],
+	"source": "index.js",
+	"main": "index.js",
+	"browser": "index.umd.js",
+	"unpkg": "index.umd.js",
+	"module": "index.esm.js",
 	"keywords": [
 		"one-wise",
 		"pairwise",
@@ -20,11 +25,17 @@
 		"test-data"
 	],
 	"scripts": {
+		"build": "microbundle",
 		"test": "ava",
-		"preversion": "ava"
+		"cov": "nyc ava",
+		"all": "npm run test && npm run build",
+		"preversion": "npm run all",
+		"postversion": "git push && git push --tags"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"ava": "^3.8.1"
+		"ava": "^3.9.0",
+		"microbundle": "^0.12.1",
+		"nyc": "^15.1.0"
 	}
 }
