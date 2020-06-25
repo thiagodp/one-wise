@@ -29,6 +29,7 @@
 		"build": "microbundle --name oneWise",
 		"test": "ava",
 		"cov": "nyc ava",
+		"build:cov": "npm run build && npm run cov",
 		"all": "npm run build && npm run test",
 		"preversion": "npm run all",
 		"postversion": "git push && git push --tags"
