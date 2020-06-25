@@ -1,12 +1,12 @@
 # one-wise
 
-One-wise combinatorial testing generator
+> One-wise combinatorial testing generator
 
 [![npm version](https://badge.fury.io/js/one-wise.svg)](https://badge.fury.io/js/one-wise)
 [![Build Status](https://travis-ci.org/thiagodp/one-wise.svg?branch=master)](https://travis-ci.org/thiagodp/one-wise)
-[![Coverage Status](https://coveralls.io/repos/github/thiagodp/one-wise/badge.svg?branch=master)](https://coveralls.io/github/thiagodp/one-wise?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/thiagodp/one-wise/badge.svg)](https://coveralls.io/github/thiagodp/one-wise)
 
-> A **1-wise** (*a.k.a.* **1-way**) testing generator guarantees that at least one value of each group appears in the generated tests. The produced array has exactly the length of the largest input array.
+A **1-wise** (*a.k.a.* **1-way**) testing generator guarantees that at least one value of each group appears in the generated tests. The produced array has exactly the length of the largest input array.
 
 ## About
 
